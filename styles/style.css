@@ -1,0 +1,11 @@
+/* DOCUMENT STYLESHEET */
+@import url("global.css");
+@import url("landing_page.css");
+@import url("portofolio.css");
+@import url("gallery.css");
+@import url("member.css");
+@import url("character.css");
+
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+

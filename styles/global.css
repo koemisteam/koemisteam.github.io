@@ -1,0 +1,110 @@
+/* GLOBAL STYLE */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* ROOT STYLE */
+:root {
+  /* PRIMARY COLOR */
+  --cyan: #ebf0ff;
+
+  /* SECONDARY COLORS */
+  --blue: #3f9fed;
+  --light-blue: #65a3ff;
+  --yellow: #fee18a;
+
+  /* NEUTRAL COLORS */
+  --black: #212121;
+  --dark-grey: #797777;
+  --grey: #b9b8b8;
+  --light-grey: #eeeeee;
+  --white: #f8faff;
+}
+
+/* BOX GUIDE */
+/* DIGUNAKAN UNTUK MEMBANTU POSITIONING DAN DISPLAY BOX CSS */
+.brd-red {
+  border: 2px solid red;
+}
+.brd-green {
+  border: 2px solid green;
+}
+.brd-blue {
+  border: 2px solid darkblue;
+}
+.brd-purple {
+  border: 2px solid purple;
+}
+.brd-yellow {
+  border: 2px solid darkorange;
+}
+
+/* TYPHOGRAPHY */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5em;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+}
+
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+}
+
+p,
+a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+}
+
+.fn-bold{
+    font-weight: 700;
+}
+
+.fn-semibold{
+    font-weight: 600;
+}
+
+.fn-medium{
+    font-weight: 500;
+}
+
+.fn-reguler{
+    font-weight: 400;
+}
+
+.fn-light{
+    font-weight: 300;
+}
+
+/* NAVBAR STYLE */
+
+/* BUTTON STYLE */
+
+/* PROFILE CARD STYLE */
+
+/* PORTFOLIO & GALLERY CARD STYLE */
+
+/* FOOTER STYLE */
