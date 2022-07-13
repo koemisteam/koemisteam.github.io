@@ -1,3 +1,55 @@
-h1{
-    color: var(--red)
+#main-landing-page {
+  margin-top: -6.5rem;
+  width: 100%;
+}
+
+/* JUMBOTRON STYLE */
+#jumbotron {
+  width: 100%;
+  height: 64rem;
+}
+
+.jumbotron-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 8rem;
+  height: 64rem;
+}
+
+.jumbotron-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.jumbotron-img img {
+  width: 24rem;
+  height: 24rem;
+}
+
+/* ABOUT US STYLE */
+
+#about-us {
+  width: 100%;
+  height: 64rem;
+  background-color: var(--dark-grey);
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7.5rem;
+  padding-top: 12.5rem;
+}
+
+.about-us-content h1,
+.about-us-content p {
+  text-align: justify;
+  color: var(--white);
+}
+
+.about-us-content p {
+  width: 51.5rem;
 }
