@@ -12,9 +12,13 @@
   --cyan: #ebf0ff;
 
   /* SECONDARY COLORS */
+  --light-cyan: #f6f8ff;
   --blue: #3f9fed;
+  --yellow: #ffce84;
+
+  /* ACCENT COLORS */
   --light-blue: #65a3ff;
-  --yellow: #fee18a;
+  --light-yellow: #fee18a;
 
   /* NEUTRAL COLORS */
   --black: #212121;
@@ -24,25 +28,44 @@
   --white: #f8faff;
 }
 
-/* BOX GUIDE */
-/* DIGUNAKAN UNTUK MEMBANTU POSITIONING DAN DISPLAY BOX CSS */
-.brd-red {
-  border: 2px solid red;
-}
-.brd-green {
-  border: 2px solid green;
-}
-.brd-blue {
-  border: 2px solid darkblue;
-}
-.brd-purple {
-  border: 2px solid purple;
-}
-.brd-yellow {
-  border: 2px solid darkorange;
+/* BODY */
+body {
+  background-color: var(--cyan);
+  height: 200vh;
 }
 
+.container {
+  padding: 0 4.5rem;
+}
+
+/* BOX GUIDE */
+/* DIGUNAKAN UNTUK MEMBANTU POSITIONING DAN DISPLAY BOX CSS */
+/* .b-red {
+  border: 2px solid red;
+}
+.b-green {
+  border: 2px solid green;
+}
+.b-blue {
+  border: 2px solid darkblue;
+}
+.b-purple {
+  border: 2px solid purple;
+}
+.b-yellow {
+  border: 2px solid darkorange;
+} */
+
 /* TYPHOGRAPHY */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 3.5em;
@@ -79,27 +102,57 @@ a {
   font-size: 1em;
 }
 
-.fn-bold{
-    font-weight: 700;
+.fn-bold {
+  font-weight: 700;
 }
 
-.fn-semibold{
-    font-weight: 600;
+.fn-semibold {
+  font-weight: 600;
 }
 
-.fn-medium{
-    font-weight: 500;
+.fn-medium {
+  font-weight: 500;
 }
 
-.fn-reguler{
-    font-weight: 400;
+.fn-regular {
+  font-weight: 400;
 }
 
-.fn-light{
-    font-weight: 300;
+.fn-light {
+  font-weight: 300;
 }
 
 /* NAVBAR STYLE */
+#navbar {
+  width: 100%;
+  height: 6.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed; */
+  background-color: var(--cyan);
+  box-shadow: var(--dark-grey) 0px -40px 100px -20px,
+    var(--dark-grey) 0px -20px 60px -30px;
+  z-index: 1000;
+}
+
+.nav-brand a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--black);
+  text-decoration: none;
+}
 
 /* BUTTON STYLE */
 
@@ -108,3 +161,16 @@ a {
 /* PORTFOLIO & GALLERY CARD STYLE */
 
 /* FOOTER STYLE */
+footer{
+  width: 100%;
+  height: 4rem;
+  background-color: var(--light-cyan);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+footer p{
+  margin: 1rem;
+  font-size: 2rem;
+}
