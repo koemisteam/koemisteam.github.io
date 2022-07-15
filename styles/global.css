@@ -126,7 +126,14 @@ a {
 header {
   position: fixed;
   width: 100%;
+  background-color: var(--cyan);
+  transition: all 0.5s ease-in-out;
   z-index: 10000;
+}
+
+header.sticky{
+  box-shadow: var(--dark-grey) 0px -40px 100px -20px,
+    var(--black) 0px -20px 60px -30px;
 }
 
 #navbar {
@@ -135,9 +142,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--cyan);
-  box-shadow: var(--dark-grey) 0px -40px 100px -20px,
-    var(--black) 0px -20px 60px -30px;
 }
 
 .nav-brand a {
