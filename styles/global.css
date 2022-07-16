@@ -123,17 +123,25 @@ a {
 }
 
 /* NAVBAR STYLE */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--cyan);
+  transition: all 0.5s ease-in-out;
+  z-index: 10000;
+}
+
+header.sticky{
+  box-shadow: var(--dark-grey) 0px -40px 100px -20px,
+    var(--black) 0px -20px 60px -30px;
+}
+
 #navbar {
   width: 100%;
   height: 6.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: fixed; */
-  background-color: var(--cyan);
-  box-shadow: var(--dark-grey) 0px -40px 100px -20px,
-    var(--dark-grey) 0px -20px 60px -30px;
-  z-index: 1000;
 }
 
 .nav-brand a {
@@ -161,7 +169,7 @@ a {
 /* PORTFOLIO & GALLERY CARD STYLE */
 
 /* FOOTER STYLE */
-footer{
+footer {
   width: 100%;
   height: 4rem;
   background-color: var(--light-cyan);
@@ -170,7 +178,7 @@ footer{
   justify-content: center;
 }
 
-footer p{
+footer p {
   margin: 1rem;
   font-size: 2rem;
 }

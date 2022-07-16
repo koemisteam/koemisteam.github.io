@@ -1,12 +1,15 @@
 #main-landing-page {
-  margin-top: -6.5rem;
+  /* margin-top: -6.5rem; */
   width: 100%;
+}
+
+.section-title {
+  padding-top: 12.5rem;
 }
 
 /* JUMBOTRON STYLE */
 #jumbotron {
   width: 100%;
-  height: 64rem;
 }
 
 .jumbotron-content {
@@ -21,6 +24,10 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.jumbotron-text p {
+  text-align: justify;
 }
 
 .jumbotron-img img {
@@ -41,7 +48,6 @@
   flex-direction: column;
   align-items: center;
   gap: 7.5rem;
-  padding-top: 12.5rem;
 }
 
 .about-us-content h1,
@@ -52,4 +58,23 @@
 
 .about-us-content p {
   width: 51.5rem;
+}
+
+/* CHARACTERS STYLE */
+#characters{
+  width: 100%;
+}
+
+.characters-content {
+  height: 64rem;
+}
+
+
+/* GALLERY STYLE */
+#stories{
+  width: 100%;
+}
+
+.stories-content {
+  height: 64rem;
 }
