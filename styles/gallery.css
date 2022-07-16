@@ -1,0 +1,32 @@
+#main-gallery {
+  margin-top: -8.5rem;
+  width: 100%;
+}
+
+/* JUMBOTRON STYLE */
+#jumbotron {
+  width: 100%;
+}
+
+.jumbotron-content {
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+  gap: 8rem;
+  margin-top: 7.5rem;
+  height: 45rem;
+}
+
+.jumbotron-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 4rem;
+}
+
+.jumbotron-img img {
+  width: 31rem;
+  height: 28.4rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
