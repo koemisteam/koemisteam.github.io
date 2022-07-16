@@ -31,7 +31,6 @@
 /* BODY */
 body {
   background-color: var(--cyan);
-  height: 200vh;
 }
 
 .container {
@@ -67,32 +66,32 @@ h6 {
 }
 
 h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 3.5em;
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 3em;
 }
 
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2.5em;
 }
 
 h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2em;
 }
 
 h5 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.5em;
 }
 
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1em;
 }
 
@@ -164,7 +163,64 @@ header.sticky{
 
 /* BUTTON STYLE */
 
-/* PROFILE CARD STYLE */
+/* SWIPER STYLE */
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+/* CHARACTER CARD STYLE */
+.character-card {
+  /* width: 19.5rem !important; */
+  /* height: 20rem; */
+  border-radius: 2rem;
+  background-color: var(--white);
+  filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.ch-card-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.75rem;
+}
+
+.ch-card-image{
+  width: 18.25rem;
+  height: 23.5rem;
+  border-radius: 2rem;
+  background-color: var(--yellow);
+}
+
+.ch-card-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.ch-card-name{
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.ch-card-name p{
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
 
 /* PORTFOLIO & GALLERY CARD STYLE */
 

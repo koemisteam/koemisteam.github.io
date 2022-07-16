@@ -4,7 +4,7 @@
 }
 
 .section-title {
-  padding-top: 12.5rem;
+  padding-top: 5rem;
 }
 
 /* JUMBOTRON STYLE */
@@ -67,6 +67,14 @@
 
 .characters-content {
   height: 64rem;
+}
+
+.characters-title{
+  text-align: center;
+}
+
+.slider{
+  margin-top: 5rem;
 }
 
 
