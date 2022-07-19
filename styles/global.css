@@ -64,35 +64,30 @@ h4,
 h5,
 h6 {
   text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
-  font-family: "Poppins", sans-serif;
   font-size: 3.5em;
 }
 
 h2 {
-  font-family: "Poppins", sans-serif;
   font-size: 3em;
 }
 
 h3 {
-  font-family: "Poppins", sans-serif;
   font-size: 2.5em;
 }
 
 h4 {
-  font-family: "Poppins", sans-serif;
   font-size: 2em;
 }
 
 h5 {
-  font-family: "Poppins", sans-serif;
   font-size: 1.5em;
 }
 
 h6 {
-  font-family: "Poppins", sans-serif;
   font-size: 1em;
 }
 
