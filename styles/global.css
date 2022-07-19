@@ -130,7 +130,7 @@ header {
   z-index: 10000;
 }
 
-header.sticky{
+header.sticky {
   box-shadow: var(--dark-grey) 0px -40px 100px -20px,
     var(--black) 0px -20px 60px -30px;
 }
@@ -162,34 +162,35 @@ header.sticky{
 }
 
 /* BUTTON STYLE */
-
-/* SWIPER STYLE */
-.swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+.button{
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
+  height: 5rem;
+  width: 19.5rem;
+  background-color: var(--blue);
+  text-align: center;
+  border-radius: 2.75rem;
 }
 
+.button a{
+  font-size: 1.5em;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 1.5rem 4.5rem;
+  margin: auto;
+}
 
 /* CHARACTER CARD STYLE */
 .character-card {
-  /* width: 19.5rem !important; */
-  /* height: 20rem; */
+  width: 19.5rem!important;
+  height: 30rem!important;
   border-radius: 2rem;
   background-color: var(--white);
   filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.ch-card-content{
+.ch-card-content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -197,26 +198,26 @@ header.sticky{
   padding: 0.75rem;
 }
 
-.ch-card-image{
+.ch-card-image {
   width: 18.25rem;
   height: 23.5rem;
   border-radius: 2rem;
   background-color: var(--yellow);
 }
 
-.ch-card-image img{
+.ch-card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 2rem;
 }
 
-.ch-card-name{
+.ch-card-name {
   text-align: center;
   margin: 1.5rem 0;
 }
 
-.ch-card-name p{
+.ch-card-name p {
   line-height: 2.5rem;
   font-size: 1.5rem;
   text-transform: capitalize;
@@ -239,8 +240,8 @@ header.sticky{
 }
 
 .card-container {
-  width: 396px;
-  height: 339px;
+  width: 24.75rem;
+  height: 21rem;
   left: 3px;
   top: 56px;
   background: #fdfdfd;
@@ -262,6 +263,35 @@ header.sticky{
   height: 226px;
   border-radius: 35px;
 }
+
+/* Diedit ama Dwi keperluan slider */
+.story-card {
+  width: 20rem;
+  height: 17.5rem;
+  background: #fdfdfd;
+  box-shadow: 3px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 45px;
+}
+
+.st-card-content {
+  margin: 0px 10px;
+  padding: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.st-card-content h5 {
+  margin-top: 0.5rem;
+}
+
+.img {
+  width: 18.5rem;
+  height: 11.75rem;
+  border-radius: 35px;
+}
+/* Ini doang yang diedit */
 
 /* FOOTER STYLE */
 footer {

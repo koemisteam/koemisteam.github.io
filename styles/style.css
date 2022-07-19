@@ -8,3 +8,6 @@
 
 /* GOOGLE FONT */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* SPLIDE CSS */
+@import url(/lib/splide-4.0.7/dist/css/splide.min.css);
