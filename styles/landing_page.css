@@ -1,5 +1,4 @@
 #main-landing-page {
-  /* margin-top: -6.5rem; */
   width: 100%;
 }
 
@@ -12,7 +11,7 @@
   width: 100%;
 }
 
-.jumbotron-content {
+.lp-jumbotron-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -61,7 +60,7 @@
 }
 
 /* CHARACTERS STYLE */
-#characters{
+#characters {
   width: 100%;
 }
 
@@ -69,20 +68,41 @@
   height: 64rem;
 }
 
-.characters-title{
+.characters-title {
   text-align: center;
 }
 
-.slider{
+.character-slider {
+  margin-top: 5rem;
+  height: 32rem;
+}
+
+.characters-content .button {
+  display: flex;
+  margin: auto;
   margin-top: 5rem;
 }
 
-
-/* GALLERY STYLE */
-#stories{
+/* STORIES STYLE */
+#stories {
   width: 100%;
 }
 
 .stories-content {
   height: 64rem;
+}
+
+.stories-title {
+  text-align: center;
+}
+
+.story-slider {
+  margin-top: 5rem;
+  height: 21rem;
+}
+
+.stories-content .button {
+  display: flex;
+  margin: auto;
+  margin-top: 5rem;
 }

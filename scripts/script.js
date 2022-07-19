@@ -4,19 +4,29 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-// SWIPER
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  slidesPerGroup: 3,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+// SPLIDE JS
+var splideCharacter = new Splide("#splideCharacter", {
+  perPage: 3,
+  rewind: true,
+  // width: "19.5rem",
+  autoWidth: true,
+  // heigth: "30rem",
+  autoHeight: true,
+  gap: "6.2rem",
+  padding: "2.25rem",
 });
+
+splideCharacter.mount();
+
+var splideStories = new Splide("#splideStory", {
+  perPage: 3,
+  rewind: true,
+  // width: "19.5rem",
+  autoWidth: true,
+  // heigth: "30rem",
+  autoHeight: true,
+  gap: "5.7rem",
+  padding: "2rem",
+});
+
+splideStories.mount();
