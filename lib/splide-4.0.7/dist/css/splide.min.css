@@ -24,7 +24,7 @@
   -ms-flex-pack: center;
   justify-content: center;
   /* margin: 0; */
-  margin: -3rem;
+  margin: -2.5rem;
   pointer-events: none;
 }
 .splide__pagination li {
@@ -188,7 +188,7 @@
   z-index: 1;
 }
 .splide__pagination__page {
-  background: #ccc;
+  background: var(--dark-grey);
   border: 0;
   border-radius: 50%;
   display: inline-block;
@@ -201,7 +201,7 @@
   width: 8px;
 }
 .splide__pagination__page.is-active {
-  background: #fff;
+  background: var(--blue);
   transform: scale(1.4);
   z-index: 1;
 }
