@@ -162,6 +162,11 @@ header.sticky {
   text-decoration: underline var(--yellow) solid 5px;
 }
 
+.nav-active{
+  font-weight: 700;
+  text-decoration: underline var(--yellow) solid 5px;
+}
+
 /* BUTTON STYLE */
 .button {
   display: flex;
