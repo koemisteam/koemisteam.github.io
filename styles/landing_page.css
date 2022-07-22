@@ -19,17 +19,17 @@
   height: 64rem;
 }
 
-.jumbotron-text {
+.lp-jumbotron-text {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.jumbotron-text p {
+.lp-jumbotron-text p {
   text-align: justify;
 }
 
-.jumbotron-img img {
+.lp-jumbotron-img img {
   width: 24rem;
   height: 24rem;
 }
