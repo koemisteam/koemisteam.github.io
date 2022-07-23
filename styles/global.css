@@ -157,12 +157,12 @@ header.sticky {
   transition: all 0.2s ease-in-out;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   font-weight: 700;
   text-decoration: underline var(--yellow) solid 5px;
 }
 
-.nav-active{
+.nav-active {
   font-weight: 700;
   text-decoration: underline var(--yellow) solid 5px;
 }
@@ -180,7 +180,7 @@ header.sticky {
   transition: all 0.3s ease-in-out;
 }
 
-.button:hover{
+.button:hover {
   background-color: var(--white);
 }
 
@@ -195,7 +195,7 @@ header.sticky {
   transition: all 0.3s ease-in-out;
 }
 
-.button a:hover{
+.button a:hover {
   color: var(--blue);
 }
 
@@ -256,16 +256,14 @@ header.sticky {
 
 .baris {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  margin: 39px 0px;
+  margin: 38px 50px;
   align-items: center;
 }
 
 .card-container {
-  width: 355px;
-  height: 303px;
-  left: 3px;
+  width: 347px;
+  height: 291.38px;
   top: 56px;
   background: #fdfdfd;
   box-shadow: 3px 4px 4px 1px rgba(0, 0, 0, 0.25);
@@ -273,15 +271,18 @@ header.sticky {
 }
 
 .card-isi {
-  margin: 0px 10px;
-  padding: 11px;
+  margin: 11.62px 14px;
 }
 
-.card-isi h5 {
-  margin-top: 0.5rem;
+.card-isi .text {
+  margin-left: 0.5rem;
 }
 
-.img {
+.text p {
+  margin-top: -0.3rem;
+}
+
+.card-isi img {
   width: 319.14px;
   height: 202px;
   border-radius: 35px;

@@ -1,5 +1,4 @@
 #main-gallery {
-  margin-top: -8.5rem;
   width: 100%;
 }
 
@@ -13,7 +12,6 @@
   justify-content: space-around;
   align-items: center;
   gap: 8rem;
-  margin-top: 7.5rem;
   height: 45rem;
 }
 
@@ -25,8 +23,8 @@
 }
 
 .Gl-jumbotron-img img {
-  width: 31rem;
-  height: 28.4rem;
+  width: 685px;
+  height: 483px;
   margin-top: 2rem;
   margin-left: 2rem;
 }
