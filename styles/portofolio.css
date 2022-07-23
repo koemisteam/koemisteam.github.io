@@ -1,5 +1,4 @@
 #main-portofolio {
-  margin-top: -7.5rem;
   width: 100%;
 }
 
@@ -13,7 +12,7 @@
   justify-content: space-around;
   align-items: center;
   gap: 8rem;
-  height: 60rem;
+  height: 45rem;
 }
 
 .Pt-jumbotron-text {
@@ -26,5 +25,6 @@
 .Pt-jumbotron-img img {
   width: 628px;
   height: 444px;
-  margin-top: -7rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }

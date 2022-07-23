@@ -31,7 +31,6 @@
 /* BODY */
 body {
   background-color: var(--cyan);
-  height: 200vh;
 }
 
 .container {
@@ -118,17 +117,25 @@ a {
 }
 
 /* NAVBAR STYLE */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--cyan);
+  transition: all 0.5s ease-in-out;
+  z-index: 10000;
+}
+
+header.sticky {
+  box-shadow: var(--dark-grey) 0px -40px 100px -20px,
+    var(--black) 0px -20px 60px -30px;
+}
+
 #navbar {
   width: 100%;
   height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: fixed; */
-  background-color: var(--cyan);
-  box-shadow: var(--dark-grey) 0px -40px 100px -20px,
-    var(--dark-grey) 0px -20px 60px -30px;
-  z-index: 1000;
 }
 
 .nav-brand a {
@@ -147,11 +154,94 @@ a {
 .nav-link {
   color: var(--black);
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  font-weight: 700;
+  text-decoration: underline var(--yellow) solid 5px;
+}
+
+.nav-active {
+  font-weight: 700;
+  text-decoration: underline var(--yellow) solid 5px;
 }
 
 /* BUTTON STYLE */
+.button {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  width: 19.5rem;
+  background-color: var(--blue);
+  text-align: center;
+  border-radius: 2.75rem;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
 
-/* PROFILE CARD STYLE */
+.button:hover {
+  background-color: var(--white);
+}
+
+.button a {
+  width: 19.5rem;
+  font-size: 1.5em;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 1.5rem 4.5rem;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.button a:hover {
+  color: var(--blue);
+}
+
+/* CHARACTER CARD STYLE */
+.character-card {
+  width: 19.5rem !important;
+  height: 30rem !important;
+  border-radius: 2rem;
+  background-color: var(--white);
+  filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.ch-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.75rem;
+}
+
+.ch-card-image {
+  width: 18.25rem;
+  height: 23.5rem;
+  border-radius: 2rem;
+  background-color: var(--yellow);
+}
+
+.ch-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.ch-card-name {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.ch-card-name a {
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--black);
+}
 
 /* PORTFOLIO & GALLERY CARD STYLE */
 #GPcard-content {
@@ -166,16 +256,14 @@ a {
 
 .baris {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  margin: 39px 0px;
+  margin: 38px 50px;
   align-items: center;
 }
 
 .card-container {
-  width: 355px;
-  height: 303px;
-  left: 3px;
+  width: 347px;
+  height: 291.38px;
   top: 56px;
   background: #fdfdfd;
   box-shadow: 3px 4px 4px 1px rgba(0, 0, 0, 0.25);
@@ -183,19 +271,51 @@ a {
 }
 
 .card-isi {
-  margin: 0px 10px;
-  padding: 11px;
+  margin: 11.62px 14px;
 }
 
-.card-isi h5 {
-  margin-top: 0.5rem;
+.card-isi .text {
+  margin-left: 0.5rem;
 }
 
-.img {
+.text p {
+  margin-top: -0.3rem;
+}
+
+.card-isi img {
   width: 319.14px;
   height: 202px;
   border-radius: 35px;
 }
+
+/* Diedit ama Dwi keperluan slider */
+.story-card {
+  width: 20rem;
+  height: 17.5rem;
+  background: #fdfdfd;
+  box-shadow: 3px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 45px;
+}
+
+.st-card-content {
+  margin: 0px 10px;
+  padding: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.st-card-content h5 {
+  margin-top: 0.5rem;
+}
+
+.img {
+  width: 18.5rem;
+  height: 11.75rem;
+  border-radius: 35px;
+}
+/* Ini doang yang diedit */
 
 /* FOOTER STYLE */
 footer {
