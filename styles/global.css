@@ -313,6 +313,16 @@ header.sticky {
 }
 /* Ini doang yang diedit */
 
+/* SKILLS AND ROLES BOX */
+.sr-box{
+  width: fit-content;
+  height: 3.5rem;
+  background-color: var(--yellow);
+  border-radius: 1rem;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  text-align: center;
+}
+
 /* FOOTER STYLE */
 footer {
   width: 100%;
