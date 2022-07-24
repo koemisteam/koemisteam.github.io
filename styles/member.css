@@ -12,7 +12,8 @@
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
-  height: 42rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .m-jumbotron-text {

@@ -30,6 +30,8 @@
     font-size: 1.5rem;
 }
 
+
+/* SKILL STYLE */
 .char-skill{
     display: flex;
     flex-direction: column;
@@ -51,6 +53,7 @@
    padding: 0 2rem;
 }
 
+/* ROLE STYLES */
 .char-role{
     display: flex;
     flex-direction: column;
@@ -72,7 +75,33 @@
    padding: 0 2rem;
 }
 
+/* CONTACT STYLES */
+.char-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
+.char-contact-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.char-contact-list a{
+    text-decoration: none;
+}
+
+.char-contact-list a i{
+    color: var(--black);
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* CHAR IMAGE STYLES */
 .char-img{
     width: 29rem;
     height: 38.5rem;
@@ -91,6 +120,11 @@
 /* PROJECTS */
 #projects {
     width: 100%;
+}
+
+.projects-content{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .projects-title {
