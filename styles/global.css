@@ -171,6 +171,7 @@ header.sticky {
 .button {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 5rem;
   width: 19.5rem;
   background-color: var(--blue);
@@ -185,12 +186,12 @@ header.sticky {
 }
 
 .button a {
-  width: 19.5rem;
+  width: 20rem;
   font-size: 1.5em;
   color: var(--white);
   text-decoration: none;
   text-transform: capitalize;
-  padding: 1.5rem 4.5rem;
+  padding: 0 4.5rem;
   margin: auto;
   transition: all 0.3s ease-in-out;
 }
@@ -317,10 +318,20 @@ header.sticky {
 }
 /* Ini doang yang diedit */
 
+/* SKILLS AND ROLES BOX */
+.sr-box{
+  width: fit-content;
+  height: 3.5rem;
+  background-color: var(--yellow);
+  border-radius: 1rem;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  text-align: center;
+}
+
 /* FOOTER STYLE */
 footer {
   width: 100%;
-  height: 4rem;
+  height: 3rem;
   background-color: var(--light-cyan);
   text-align: center;
   display: flex;
@@ -328,6 +339,7 @@ footer {
 }
 
 footer p {
-  margin: 1rem;
-  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
 }

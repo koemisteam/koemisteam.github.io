@@ -1,0 +1,142 @@
+#main-character{
+    width: 100%;
+}
+
+/* character style */
+#character-info{
+    width: 100%;
+}
+
+.char-info-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 11rem;
+    /* min-height: 64rem; */
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    height: fit-content;
+}
+
+.char-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    width: 50%;
+}
+
+.char-motto p{
+    font-size: 1.5rem;
+}
+
+
+/* SKILL STYLE */
+.char-skill{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.char-skill-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.char-skill-list p{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 2rem;
+}
+
+/* ROLE STYLES */
+.char-role{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.char-role-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.char-role-list p{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 2rem;
+}
+
+/* CONTACT STYLES */
+.char-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.char-contact-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.char-contact-list a{
+    text-decoration: none;
+}
+
+.char-contact-list a i{
+    color: var(--black);
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* CHAR IMAGE STYLES */
+.char-img{
+    width: 29rem;
+    height: 38.5rem;
+    background-color: var(--yellow);
+    border-radius: 2rem;
+    filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.char-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+/* PROJECTS */
+#projects {
+    width: 100%;
+}
+
+.projects-content{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.projects-title {
+    text-align: center;
+}
+
+.projects-slider {
+    margin-top: 5rem;
+    height: 21rem;
+}
+
+/* CHARACTERS STYLE */
+.characters-m-content{
+    margin-bottom: 8rem;
+}

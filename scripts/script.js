@@ -5,7 +5,8 @@ window.addEventListener("scroll", function () {
 });
 
 // SPLIDE JS
-var splideCharacter = new Splide("#splideCharacter", {
+// Landing page characters
+var lpsplideCharacter = new Splide("#splideCharacter", {
   perPage: 3,
   rewind: true,
   // width: "19.5rem",
@@ -18,6 +19,7 @@ var splideCharacter = new Splide("#splideCharacter", {
 
 splideCharacter.mount();
 
+// Landing page stories
 var splideStories = new Splide("#splideStory", {
   perPage: 3,
   rewind: true,
@@ -30,3 +32,5 @@ var splideStories = new Splide("#splideStory", {
 });
 
 splideStories.mount();
+
+
