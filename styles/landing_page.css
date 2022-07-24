@@ -65,7 +65,8 @@
 }
 
 .about-us-content p {
-  width: 51.5rem;
+  width: 40rem;
+  line-height: 2rem;
 }
 
 .about-us-content .button {
