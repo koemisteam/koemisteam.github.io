@@ -6,7 +6,7 @@ window.addEventListener("scroll", function () {
 
 // SPLIDE JS
 // Landing page characters
-var splideCharacter = new Splide("#splideCharacter", {
+var lpsplideCharacter = new Splide("#splideCharacter", {
   perPage: 3,
   rewind: true,
   // width: "19.5rem",

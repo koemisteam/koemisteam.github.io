@@ -101,7 +101,7 @@
               <h1 class="fn-semibold">projects</h1>
             </div>
 
-            <div id="agungProject" class="splide" aria-label="projects-slider">
+            <div id="splideProject" class="splide" aria-label="projects-slider">
               <div class="splide__track projects-slider b-red">
                 <div class="splide__list slider-content b-blue">
                   <div class="splide__slide story-card">
@@ -152,7 +152,7 @@
             </div>
 
             <div
-              id="agungCharacter"
+              id="splideCharacter"
               class="splide"
               aria-label="characters-slider"
             >
@@ -161,7 +161,7 @@
                   <div class="splide__slide character-card b-yellow">
                     <div class="ch-card-content b-purple">
                       <div class="ch-card-image b-green">
-                        <a href="views/characters/character_agung.html">
+                        <a href="">
                           <img
                             src="/assets/animasi_3d/3dlandingpage.png"
                             alt="Agung Krissanto Img"
@@ -476,7 +476,7 @@
     <script src="/scripts/script.js"></script>
 
     <script>
-      var agungProjects = new Splide("#agungProject", {
+      var splideProjects = new Splide("#splideProject", {
         perPage: 3,
         rewind: true,
         // width: "19.5rem",
@@ -487,9 +487,9 @@
         padding: "2rem",
       });
 
-      agungProjects.mount();
+      splideProjects.mount();
 
-      var agungCharacters = new Splide("#agungCharacter", {
+      var splideCharacters = new Splide("#splideCharacter", {
         perPage: 3,
         rewind: true,
         // width: "19.5rem",
@@ -500,7 +500,7 @@
         padding: "2.25rem",
       });
 
-      agungCharacters.mount();
+      splideCharacters.mount();
     </script>
   </body>
 </html>
