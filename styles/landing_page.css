@@ -23,13 +23,17 @@
   gap: 2rem;
 }
 
+.lp-jumbotron-text h2 {
+  text-transform: uppercase;
+}
+
 .lp-jumbotron-text p {
   text-align: justify;
 }
 
 .lp-jumbotron-img img {
-  width: 24rem;
-  height: 24rem;
+  width: 40rem;
+  height: 22rem;
 }
 
 /* ABOUT US STYLE */
