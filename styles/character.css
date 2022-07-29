@@ -9,7 +9,7 @@
 
 .char-info-content{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 11rem;
     /* min-height: 64rem; */
@@ -27,6 +27,7 @@
 }
 
 .char-motto p{
+    margin-top: -1rem;
     font-size: 1.5rem;
 }
 
