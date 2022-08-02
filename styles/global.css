@@ -156,6 +156,17 @@ header.sticky {
   align-items: center;
 }
 
+.nav-brand{
+  width: 5rem;
+  height: 4rem;
+}
+
+.nav-brand img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .nav-brand a {
   text-decoration: none;
   font-size: 1.5rem;
