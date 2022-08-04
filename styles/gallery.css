@@ -1,5 +1,4 @@
 #main-gallery {
-  margin-top: -8.5rem;
   width: 100%;
 }
 
@@ -8,25 +7,24 @@
   width: 100%;
 }
 
-.jumbotron-content {
+.Gl-jumbotron-content {
   display: flex;
-  justify-content: first baseline;
+  justify-content: space-around;
   align-items: center;
   gap: 8rem;
-  margin-top: 7.5rem;
   height: 45rem;
 }
 
-.jumbotron-text {
+.Gl-jumbotron-text {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin-left: 4rem;
 }
 
-.jumbotron-img img {
-  width: 31rem;
-  height: 28.4rem;
+.Gl-jumbotron-img img {
+  width: 685px;
+  height: 483px;
   margin-top: 2rem;
   margin-left: 2rem;
 }

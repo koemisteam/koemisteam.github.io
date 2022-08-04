@@ -1,0 +1,42 @@
+#main-members {
+  width: 100%;
+}
+
+/* Jumbotron Style */
+#jumbotron {
+  width: 100%;
+}
+
+.m-jumbotron-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.m-jumbotron-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+}
+
+.m-jumbotron-img img {
+  width: 42rem;
+  height: 29.5rem;
+}
+
+/* MemberCatalog styles */
+.membercatalog-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    margin-bottom: 5rem;
+}
+
+.members-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

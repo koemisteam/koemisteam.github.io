@@ -5,39 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SWIPER CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-
     <!-- VANILLA CSS -->
     <link rel="stylesheet" href="styles/style.css" />
+
     <title>Koemis Web</title>
   </head>
   <body>
     <header>
-      <nav id="navbar" class="container b-red">
-        <div class="nav-brand b-blue">
-          <a href="#" class="fn-bold b-green">Logo Koemis</a>
+      <nav id="navbar" class="container">
+        <div class="nav-brand">
+          <a href="#"
+            ><img
+              class="brand-img"
+              src="/assets/logo/koemis.png"
+              alt="Logo Koemis"
+          /></a>
         </div>
-        <div class="nav-menu b-blue">
+        <div class="nav-menu">
           <ul class="nav-list">
-            <li class="nav-item b-yellow">
-              <a class="nav-link fn-medium b-green" href="#">Home</a>
+            <li class="nav-item">
+              <a class="nav-link nav-active fn-medium" href="#">Home</a>
             </li>
-            <li class="nav-item b-yellow">
-              <a class="nav-link fn-medium b-green" href="views/portofolio.html"
+            <li class="nav-item">
+              <a class="nav-link fn-medium" href="views/portofolio.html"
                 >Portofolio</a
               >
             </li>
-            <li class="nav-item b-yellow">
-              <a class="nav-link fn-medium b-green" href="views/gallery.html"
+            <li class="nav-item">
+              <a class="nav-link fn-medium" href="views/gallery.html"
                 >Gallery</a
               >
             </li>
-            <li class="nav-item b-yellow">
-              <a class="nav-link fn-medium b-green" href="views/members.html"
+            <li class="nav-item">
+              <a class="nav-link fn-medium" href="views/members.html"
                 >Members</a
               >
             </li>
@@ -46,236 +46,640 @@
       </nav>
     </header>
 
-    <main id="main-landing-page" class="b-purple">
-      <div id="content" class="b-red">
+    <main id="main-landing-page" class="">
+      <div id="content" class="">
         <section id="jumbotron">
-          <div class="jumbotron-content container b-yellow">
-            <div class="jumbotron-text b-red">
-              <h2 class="fn-semibold b-green">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </h2>
-              <p class="fn-regular b-green">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
-                expedita, obcaecati est quasi aperiam tempora accusamus fugiat
-                ab in! Corporis totam explicabo fugiat nostrum delectus esse
-                nulla dolorum nobis mollitia.
+          <div class="lp-jumbotron-content container">
+            <div class="lp-jumbotron-text">
+              <h2 class="fn-semibold">welcome to the koemis web!</h2>
+              <p class="fn-regular">
+                We share our stories, happiness, sadness, and jokes here.
               </p>
             </div>
-            <div class="jumbotron-img">
+            <div class="lp-jumbotron-img">
               <img
-                src="assets/animasi_3d/3dlandingpage.png"
+                src="assets/animasi_3d/2dlandingpage.png"
                 alt="koemis man"
-                class="b-green"
+                class=""
               />
             </div>
           </div>
         </section>
 
-        <section id="about-us" class="b-blue">
+        <section id="about-us" class="">
           <div class="about-us-content">
             <div class="section-title">
-              <h1 class="fn-semibold b-green">about us</h1>
+              <h1 class="fn-semibold">about us</h1>
             </div>
             <div class="about-us-text container">
-              <p class="fn-regular b-green">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem saepe atque natus, similique rerum at nemo
-                quaerat cum necessitatibus omnis hic explicabo nihil reiciendis
-                velit nulla deleniti neque nam! Accusantium? Lorem, ipsum dolor
-                sit amet consectetur adipisicing elit. Nesciunt molestiae
-                recusandae eum rerum totam amet, molestias fuga numquam
-                architecto dolorem! Corporis exercitationem cum repellendus nemo
-                debitis quia placeat quasi reprehenderit.
+              <p class="fn-regular">
+                Berawal dari perkumpulan tiga remaja dengan kelas mata kuliah
+                yang sama dan akhirnya bertambah anggotanya menjadi 15
+                mahasiswa/i dengan sifat, passion dan sifat yang berbeda-beda.
+                Dikenal sebagai Warkop Bubur Koemis yang berasal dari tempat
+                kami berkumpul yaitu sebuah warung kopi dengan nama Bubur Kumis.
+                Kami merupakan kumpulan mahasiswa/i dari program studi Sistem
+                Informasi Fakultas Ilmu Komputer UPN Veteran Jakarta. Warkop
+                Bubur Koemis atau BK kami jadikan sebagai wadah untuk berbagi
+                cerita, pengalaman, canda, tawa, suka, duka, serta karya yang
+                kami buat.
               </p>
+            </div>
+
+            <div class="button">
+              <a class="fn-semibold" href="views/portofolio.html">our works</a>
             </div>
           </div>
         </section>
 
-        <section id="characters" class="b-purple">
+        <section id="characters" class="">
           <div class="characters-content container">
             <div class="section-title characters-title">
-              <h1>choose your character</h1>
+              <h1 class="fn-semibold">choose your character</h1>
             </div>
 
-            <div class="swiper mySwiper slider b-red">
-              <div class="swiper-wrapper slider-content b-blue">
-                <div class="swiper-slide character-card b-yellow">
-                  <div class="ch-card-content b-purple">
-                    <div class="ch-card-image b-green">
-                      <img src="assets/animasi_3d/3dlandingpage.png" alt="" />
+            <div
+              id="splideCharacter"
+              class="splide"
+              aria-label="characters-slider"
+            >
+              <div class="splide__track character-slider">
+                <div class="splide__list slider-content">
+                  <div class="splide__slide character-card">
+                    <div class="ch-card-content">
+                      <div class="ch-card-image flip-img">
+                        <div class="flip-inner bg-green">
+                          <div class="flip-front">
+                            <a href="views/characters/character_agung.html">
+                              <img
+                                src="/assets/characters/Agung Krissanto/agung1.png"
+                                alt="Agung Krissanto Img"
+                              />
+                            </a>
+                          </div>
+                          <div class="flip-back">
+                            <a href="views/characters/character_agung.html">
+                              <img
+                                src="/assets/characters/Agung Krissanto/agung2.png"
+                                alt="Agung Krissanto Img"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ch-card-name">
+                        <a
+                          href="views/characters/character_agung.html"
+                          class="fn-medium"
+                          >agung krissanto</a
+                        >
+                      </div>
                     </div>
-                    <div class="ch-card-name b-green">
-                      <p class="fn-medium b-green">Agung Krissanto</p>
+                  </div>
+
+                  <div class="splide__slide character-card">
+                    <div class="ch-card-content">
+                      <div class="ch-card-image flip-img">
+                        <div class="flip-inner bg-red">
+                          <div class="flip-front">
+                            <a href="views/characters/character_aji.html">
+                              <img
+                                src="/assets/characters/Aji Supriyatno/aji1.png"
+                                alt="Aji Supriyatno Img"
+                              />
+                            </a>
+                          </div>
+                          <div class="flip-back">
+                            <a href="views/characters/character_aji.html">
+                              <img
+                                src="/assets/characters/Aji Supriyatno/aji2.png"
+                                alt="Aji Supriyatno Img"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ch-card-name">
+                        <a
+                          href="views/characters/character_aji.html"
+                          class="fn-medium"
+                          >aji supriyatno</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide character-card">
+                    <div class="ch-card-content">
+                      <div class="ch-card-image flip-img">
+                        <div class="flip-inner bg-yellow">
+                          <div class="flip-front">
+                            <a href="views/characters/character_balqis.html">
+                              <img
+                                src="/assets/characters/Amalia Balqis Qonitah/balqis1.png"
+                                alt="Amalia Balqis Img"
+                              />
+                            </a>
+                          </div>
+                          <div class="flip-back">
+                            <a href="views/characters/character_balqis.html">
+                              <img
+                                src="/assets/characters/Amalia Balqis Qonitah/balqis2.png"
+                                alt="Amalia Balqis Img"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ch-card-name">
+                        <a
+                          href="views/characters/character_balqis.html"
+                          class="fn-medium"
+                          >amalia balqis qonitah</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide character-card">
+                    <div class="ch-card-content">
+                      <div class="ch-card-image flip-img">
+                        <div class="flip-inner bg-red">
+                          <div class="flip-front">
+                            <a href="views/characters/character_bima.html">
+                              <img
+                                src="/assets/cover_gallery/Empty-img.png"
+                                alt="Bima Putra Efendi Img"
+                              />
+                            </a>
+                          </div>
+                          <div class="flip-back">
+                            <a href="views/characters/character_bima.html">
+                              <img
+                                src="/assets/cover_gallery/Empty-img.png"
+                                alt="Bima Putra Efendi Img"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ch-card-name">
+                        <a
+                          href="views/characters/character_bima.html"
+                          class="fn-medium"
+                          >bima putra efendi</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide character-card">
+                    <div class="ch-card-content">
+                      <div class="ch-card-image flip-img">
+                        <div class="flip-inner bg-yellow">
+                          <div class="flip-front">
+                            <a href="/views/characters/character_dwi.html">
+                              <img
+                                src="/assets/characters/Dwi Krisdiyanto/dwi1.png"
+                                alt="Dwi Krisdiyanto Img"
+                              />
+                            </a>
+                          </div>
+                          <div class="flip-back">
+                            <a href="/views/characters/character_dwi.html">
+                              <img
+                                src="/assets/characters/Dwi Krisdiyanto/dwi2.png"
+                                alt="Dwi Krisdiyanto Img"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ch-card-name">
+                        <a
+                          href="views/characters/character_dwi.html"
+                          class="fn-medium"
+                          >dwi krisdiyanto</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide character-card">
+                    <div class="ch-card-content">
+                      <div class="ch-card-image flip-img">
+                        <div class="flip-inner bg-green">
+                          <div class="flip-front">
+                            <a href="/views/characters/character_gracia.html">
+                              <img
+                                src="/assets/characters/Gracia Hotmauli/gracia1.png"
+                                alt="Gracia Hotmauli Img"
+                              />
+                            </a>
+                          </div>
+                          <div class="flip-back">
+                            <a href="/views/characters/character_gracia.html">
+                              <img
+                                src="/assets/characters/Gracia Hotmauli/gracia2.png"
+                                alt="Gracia Hotmauli Img"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ch-card-name">
+                        <a
+                          href="views/characters/character_gracia.html"
+                          class="fn-medium"
+                          >gracia hotmauli</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide character-card">
+                    <div class="ch-card-content">
+                      <div class="ch-card-image flip-img">
+                        <div class="flip-inner bg-yellow">
+                          <div class="flip-front">
+                            <a href="/views/characters/character_deka.html">
+                              <img
+                                src="/assets/characters/Hari Agung Merdeka/deka1.png"
+                                alt="Hari Agung Merdeka Img"
+                              />
+                            </a>
+                          </div>
+                          <div class="flip-back">
+                            <a href="/views/characters/character_deka.html">
+                              <img
+                                src="/assets/characters/Hari Agung Merdeka/deka2.png"
+                                alt="Hari Agung Merdeka Img"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ch-card-name">
+                        <a
+                          href="views/characters/character_deka.html"
+                          class="fn-medium"
+                          >hari agung merdeka</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide character-card">
+                    <div class="ch-card-content">
+                      <div class="ch-card-image flip-img">
+                        <div class="flip-inner bg-green">
+                          <div class="flip-front">
+                            <a href="/views/characters/character_isabel.html">
+                              <img
+                                src="/assets/characters/Isabel Rose/isabel1.png"
+                                alt="isabel Rose Img"
+                              />
+                            </a>
+                          </div>
+                          <div class="flip-back">
+                            <a href="/views/characters/character_isabel.html">
+                              <img
+                                src="/assets/characters/Isabel Rose/isabel2.png"
+                                alt="isabel Rose Img"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ch-card-name">
+                        <a
+                          href="views/characters/character_isabel.html"
+                          class="fn-medium"
+                          >isabel rose</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide character-card">
+                    <div class="ch-card-content">
+                      <div class="ch-card-image flip-img">
+                        <div class="flip-inner bg-red">
+                          <div class="flip-front">
+                            <a href="/views/characters/character_jo.html">
+                              <img
+                                src="/assets/cover_gallery/Empty-img.png"
+                                alt="Jose Rizal Img"
+                              />
+                            </a>
+                          </div>
+                          <div class="flip-back">
+                            <a href="/views/characters/character_jo.html">
+                              <img
+                                src="/assets/cover_gallery/Empty-img.png"
+                                alt="Jose Rizal Img"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ch-card-name">
+                        <a
+                          href="views/characters/character_jo.html"
+                          class="fn-medium"
+                          >jose rizal</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide character-card">
+                    <div class="ch-card-content">
+                      <div class="ch-card-image flip-img">
+                        <div class="flip-inner bg-green">
+                          <div class="flip-front">
+                            <a href="/views/characters/character_nia.html">
+                              <img
+                                src="/assets/characters/Khaliza Fania/nia1.png"
+                                alt="Khaliza Fania Img"
+                              />
+                            </a>
+                          </div>
+                          <div class="flip-back">
+                            <a href="/views/characters/character_nia.html">
+                              <img
+                                src="/assets/characters/Khaliza Fania/nia2.png"
+                                alt="Khaliza Fania Img"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ch-card-name">
+                        <a
+                          href="views/characters/character_nia.html"
+                          class="fn-medium"
+                          >khaliza fania</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide character-card">
+                    <div class="ch-card-content">
+                      <div class="ch-card-image flip-img">
+                        <div class="flip-inner bg-red">
+                          <div class="flip-front">
+                            <a href="/views/characters/character_naufal.html">
+                              <img
+                                src="/assets/cover_gallery/Empty-img.png"
+                                alt="Muhammad Naufal Taqiyuddin Img"
+                              />
+                            </a>
+                          </div>
+                          <div class="flip-back">
+                            <a href="/views/characters/character_naufal.html">
+                              <img
+                                src="/assets/cover_gallery/Empty-img.png"
+                                alt="Muhammad Naufal Taqiyuddin Img"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ch-card-name">
+                        <a
+                          href="views/characters/character_naufal.html"
+                          class="fn-medium"
+                          >muhammad naufal t</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide character-card">
+                    <div class="ch-card-content">
+                      <div class="ch-card-image flip-img">
+                        <div class="flip-inner bg-yellow">
+                          <div class="flip-front">
+                            <a href="/views/characters/character_estu.html">
+                              <img
+                                src="/assets/characters/Pangestu Dwi Panggo/estu1.png"
+                                alt="Pangestu Dwi Panggo Img"
+                              />
+                            </a>
+                          </div>
+                          <div class="flip-back">
+                            <a href="/views/characters/character_estu.html">
+                              <img
+                                src="/assets/characters/Pangestu Dwi Panggo/estu2.png"
+                                alt="Pangestu Dwi Panggo Img"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ch-card-name">
+                        <a
+                          href="views/characters/character_estu.html"
+                          class="fn-medium"
+                          >pangestu dwi panggo</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide character-card">
+                    <div class="ch-card-content">
+                      <div class="ch-card-image flip-img">
+                        <div class="flip-inner bg-red">
+                          <div class="flip-front">
+                            <a href="/views/characters/character_pelangi.html">
+                              <img
+                                src="/assets/characters/Pelangi Dwi Mawarni/anggi1.png"
+                                alt="Pelangi Dwi Mawarni Img"
+                              />
+                            </a>
+                          </div>
+                          <div class="flip-back">
+                            <a href="/views/characters/character_pelangi.html">
+                              <img
+                                src="/assets/characters/Pelangi Dwi Mawarni/anggi2.png"
+                                alt="Pelangi Dwi Mawarni Img"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ch-card-name">
+                        <a
+                          href="views/characters/character_pelangi.html"
+                          class="fn-medium"
+                          >pelangi dwi mawarni</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide character-card">
+                    <div class="ch-card-content">
+                      <div class="ch-card-image flip-img">
+                        <div class="flip-inner bg-yellow">
+                          <div class="flip-front">
+                            <a href="/views/characters/character_radit.html">
+                              <img
+                                src="/assets/characters/Radityo Agraprana Susanto/radit1.png"
+                                alt="Radityo Agraprana Susanto Img"
+                              />
+                            </a>
+                          </div>
+                          <div class="flip-back">
+                            <a href="/views/characters/character_radit.html">
+                              <img
+                                src="/assets/characters/Radityo Agraprana Susanto/radit2.png"
+                                alt="Radityo Agraprana Susanto Img"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ch-card-name">
+                        <a
+                          href="views/characters/character_radit.html"
+                          class="fn-medium"
+                          >radityo agraprana s</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide character-card">
+                    <div class="ch-card-content">
+                      <div class="ch-card-image flip-img">
+                        <div class="flip-inner bg-green">
+                          <div class="flip-front">
+                            <a href="/views/characters/character_rakha.html">
+                              <img
+                                src="/assets/characters/Rakha Dimas Ramadhan Munir/rakha1.png"
+                                alt="Rakha Dimas Ramadhan Munir Img"
+                              />
+                            </a>
+                          </div>
+                          <div class="flip-back">
+                            <a href="/views/characters/character_rakha.html">
+                              <img
+                                src="/assets/characters/Rakha Dimas Ramadhan Munir/rakha2.png"
+                                alt="Rakha Dimas Ramadhan Munir Img"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ch-card-name">
+                        <a
+                          href="views/characters/character_rakha.html"
+                          class="fn-medium"
+                          >rakha dimas r.m</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <div class="swiper-slide character-card b-yellow">
-                  <div class="ch-card-content b-purple">
-                    <div class="ch-card-image b-green">
-                      <img src="assets/animasi_3d/3dlandingpage.png" alt="" />
-                    </div>
-                    <div class="ch-card-name b-green">
-                      <p class="fn-medium b-green">Aji Supriyatno</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide character-card b-yellow">
-                  <div class="ch-card-content b-purple">
-                    <div class="ch-card-image b-green">
-                      <img src="assets/animasi_3d/3dlandingpage.png" alt="" />
-                    </div>
-                    <div class="ch-card-name b-green">
-                      <p class="fn-medium b-green">Amalia Balqis Qonitah</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide character-card b-yellow">
-                  <div class="ch-card-content b-purple">
-                    <div class="ch-card-image b-green">
-                      <img src="assets/animasi_3d/3dlandingpage.png" alt="" />
-                    </div>
-                    <div class="ch-card-name b-green">
-                      <p class="fn-medium b-green">Bima Putra Effendi</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide character-card b-yellow">
-                  <div class="ch-card-content b-purple">
-                    <div class="ch-card-image b-green">
-                      <img src="assets/animasi_3d/3dlandingpage.png" alt="" />
-                    </div>
-                    <div class="ch-card-name b-green">
-                      <p class="fn-medium b-green">Dwi Krisdiyanto</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide character-card b-yellow">
-                  <div class="ch-card-content b-purple">
-                    <div class="ch-card-image b-green">
-                      <img src="assets/animasi_3d/3dlandingpage.png" alt="" />
-                    </div>
-                    <div class="ch-card-name b-green">
-                      <p class="fn-medium b-green">Gracia Hotmauli</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide character-card b-yellow">
-                  <div class="ch-card-content b-purple">
-                    <div class="ch-card-image b-green">
-                      <img src="assets/animasi_3d/3dlandingpage.png" alt="" />
-                    </div>
-                    <div class="ch-card-name b-green">
-                      <p class="fn-medium b-green">Hari Agung Merdeka</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide character-card b-yellow">
-                  <div class="ch-card-content b-purple">
-                    <div class="ch-card-image b-green">
-                      <img src="assets/animasi_3d/3dlandingpage.png" alt="" />
-                    </div>
-                    <div class="ch-card-name b-green">
-                      <p class="fn-medium b-green">Isabel Rose</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide character-card b-yellow">
-                  <div class="ch-card-content b-purple">
-                    <div class="ch-card-image b-green">
-                      <img src="assets/animasi_3d/3dlandingpage.png" alt="" />
-                    </div>
-                    <div class="ch-card-name b-green">
-                      <p class="fn-medium b-green">Jose Rizal</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide character-card b-yellow">
-                  <div class="ch-card-content b-purple">
-                    <div class="ch-card-image b-green">
-                      <img src="assets/animasi_3d/3dlandingpage.png" alt="" />
-                    </div>
-                    <div class="ch-card-name b-green">
-                      <p class="fn-medium b-green">Khaliza Fania</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide character-card b-yellow">
-                  <div class="ch-card-content b-purple">
-                    <div class="ch-card-image b-green">
-                      <img src="assets/animasi_3d/3dlandingpage.png" alt="" />
-                    </div>
-                    <div class="ch-card-name b-green">
-                      <p class="fn-medium b-green">Muhammad Naufal T</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide character-card b-yellow">
-                  <div class="ch-card-content b-purple">
-                    <div class="ch-card-image b-green">
-                      <img src="assets/animasi_3d/3dlandingpage.png" alt="" />
-                    </div>
-                    <div class="ch-card-name b-green">
-                      <p class="fn-medium b-green">Pangestu Dwi Panggo</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide character-card b-yellow">
-                  <div class="ch-card-content b-purple">
-                    <div class="ch-card-image b-green">
-                      <img src="assets/animasi_3d/3dlandingpage.png" alt="" />
-                    </div>
-                    <div class="ch-card-name b-green">
-                      <p class="fn-medium b-green">pelangi dwi mawarni</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide character-card b-yellow">
-                  <div class="ch-card-content b-purple">
-                    <div class="ch-card-image b-green">
-                      <img src="assets/animasi_3d/3dlandingpage.png" alt="" />
-                    </div>
-                    <div class="ch-card-name b-green">
-                      <p class="fn-medium b-green">radityo agraprana susanto</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide character-card b-yellow">
-                  <div class="ch-card-content b-purple">
-                    <div class="ch-card-image b-green">
-                      <img src="assets/animasi_3d/3dlandingpage.png" alt="" />
-                    </div>
-                    <div class="ch-card-name b-green">
-                      <p class="fn-medium b-green">rakha dimas r.m</p>
-                    </div>
-                  </div>
-                </div>
-
               </div>
-              <div class="swiper-button-next b-blue"></div>
-            <div class="swiper-button-prev b-blue"></div>
-            <div class="swiper-pagination b-blue"></div>
+            </div>
+
+            <div class="button">
+              <a class="fn-semibold" href="views/members.html">all character</a>
             </div>
           </div>
         </section>
 
         <section id="stories">
           <div class="stories-content container">
-            <div class="section-title">
-              <h1>our stories</h1>
+            <div class="section-title stories-title">
+              <h1 class="fn-semibold">our stories</h1>
+            </div>
+
+            <div id="splideStory" class="splide" aria-label="stories-slider">
+              <div class="splide__track story-slider">
+                <div class="splide__list slider-content">
+                  <div class="splide__slide story-card">
+                    <div class="st-card-content">
+                      <img
+                        class="img"
+                        src="../assets/cover_gallery/kumpul.jpg"
+                        alt=""
+                      />
+                      <h5>Kumpul</h5>
+                      <p>Jumat, 04/11/2021</p>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide story-card">
+                    <div class="st-card-content">
+                      <img
+                        class="img"
+                        src="../assets/cover_gallery/bakar-bakar.JPG"
+                        alt=""
+                      />
+                      <h5>Bakar-bakar</h5>
+                      <p>Jumat, 04/11/2021</p>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide story-card">
+                    <div class="st-card-content">
+                      <img
+                        class="img"
+                        src="../assets/cover_gallery/bukber.jpg"
+                        alt=""
+                      />
+                      <h5>Bukber BK 2022</h5>
+                      <p>Jumat, 04/11/2021</p>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide story-card">
+                    <div class="st-card-content">
+                      <img
+                        class="img"
+                        src="assets/cover_gallery/Empty-img.png"
+                        alt=""
+                      />
+                      <h5>Coming Soon</h5>
+                      <p>Coming Soon</p>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide story-card">
+                    <div class="st-card-content">
+                      <img
+                        class="img"
+                        src="assets/cover_gallery/Empty-img.png"
+                        alt=""
+                      />
+                      <h5>Coming Soon</h5>
+                      <p>Coming Soon</p>
+                    </div>
+                  </div>
+
+                  <div class="splide__slide story-card">
+                    <div class="st-card-content">
+                      <img
+                        class="img"
+                        src="assets/cover_gallery/Empty-img.png"
+                        alt=""
+                      />
+                      <h5>Coming Soon</h5>
+                      <p>Coming Soon</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="button">
+              <a class="fn-semibold" href="views/gallery.html">more</a>
             </div>
           </div>
         </section>
@@ -286,8 +690,39 @@
       <p class="fn-regular">&#169; Koemis Web</p>
     </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- SPLIDE JS -->
+    <script src="lib/splide-4.0.7/dist/js/splide.min.js"></script>
+
+    <script>
+      // SPLIDE JS
+      // Landing page characters
+      var splideCharacter = new Splide("#splideCharacter", {
+        perPage: 3,
+        rewind: true,
+        // width: "19.5rem",
+        autoWidth: true,
+        // heigth: "30rem",
+        autoHeight: true,
+        gap: "6.2rem",
+        padding: "2.25rem",
+      });
+
+      splideCharacter.mount();
+
+      // Landing page stories
+      var splideStories = new Splide("#splideStory", {
+        perPage: 3,
+        rewind: true,
+        // width: "19.5rem",
+        autoWidth: true,
+        // heigth: "30rem",
+        autoHeight: true,
+        gap: "5.7rem",
+        padding: "2rem",
+      });
+
+      splideStories.mount();
+    </script>
 
     <!-- VANILLA JS -->
     <script src="scripts/script.js"></script>

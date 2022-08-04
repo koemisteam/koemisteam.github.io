@@ -20,6 +20,11 @@
   --light-blue: #65a3ff;
   --light-yellow: #fee18a;
 
+  /* CHAR BG */
+  --bg-green: #DCFFC6;
+  --bg-red: #FFD2D2;
+  --bg-yellow: #F4FAB6;
+
   /* NEUTRAL COLORS */
   --black: #212121;
   --dark-grey: #797777;
@@ -35,6 +40,19 @@ body {
 
 .container {
   padding: 0 4.5rem;
+}
+
+/* CHAR BACKGROUND */
+.bg-green{
+  background-color: var(--bg-green);
+}
+
+.bg-red{
+  background-color: var(--bg-red);
+}
+
+.bg-yellow{
+  background-color: var(--bg-yellow);
 }
 
 /* BOX GUIDE */
@@ -63,35 +81,30 @@ h4,
 h5,
 h6 {
   text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
-  font-family: "Poppins", sans-serif;
   font-size: 3.5em;
 }
 
 h2 {
-  font-family: "Poppins", sans-serif;
   font-size: 3em;
 }
 
 h3 {
-  font-family: "Poppins", sans-serif;
   font-size: 2.5em;
 }
 
 h4 {
-  font-family: "Poppins", sans-serif;
   font-size: 2em;
 }
 
 h5 {
-  font-family: "Poppins", sans-serif;
   font-size: 1.5em;
 }
 
 h6 {
-  font-family: "Poppins", sans-serif;
   font-size: 1em;
 }
 
@@ -130,7 +143,7 @@ header {
   z-index: 10000;
 }
 
-header.sticky{
+header.sticky {
   box-shadow: var(--dark-grey) 0px -40px 100px -20px,
     var(--black) 0px -20px 60px -30px;
 }
@@ -141,6 +154,17 @@ header.sticky{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav-brand{
+  width: 5rem;
+  height: 4rem;
+}
+
+.nav-brand img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .nav-brand a {
@@ -159,37 +183,62 @@ header.sticky{
 .nav-link {
   color: var(--black);
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  font-weight: 700;
+  text-decoration: underline var(--yellow) solid 5px;
+}
+
+.nav-active {
+  font-weight: 700;
+  text-decoration: underline var(--yellow) solid 5px;
 }
 
 /* BUTTON STYLE */
-
-/* SWIPER STYLE */
-.swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+.button {
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
+  justify-content: center;
+  height: 5rem;
+  width: 19.5rem;
+  background-color: var(--blue);
+  text-align: center;
+  border-radius: 2.75rem;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
 }
 
+.button:hover {
+  background-color: var(--white);
+}
+
+.button a {
+  width: 20rem;
+  font-size: 1.5em;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 0 4.5rem;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.button a:hover {
+  color: var(--blue);
+}
 
 /* CHARACTER CARD STYLE */
 .character-card {
-  /* width: 19.5rem !important; */
-  /* height: 20rem; */
+  width: 19.5rem !important;
+  height: 30rem !important;
   border-radius: 2rem;
   background-color: var(--white);
   filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.ch-card-content{
+.ch-card-content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -197,34 +246,91 @@ header.sticky{
   padding: 0.75rem;
 }
 
-.ch-card-image{
+.ch-card-image {
   width: 18.25rem;
   height: 23.5rem;
   border-radius: 2rem;
-  background-color: var(--yellow);
 }
 
-.ch-card-image img{
+.ch-card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 2rem;
 }
 
-.ch-card-name{
+.ch-card-name {
   text-align: center;
   margin: 1.5rem 0;
 }
 
-.ch-card-name p{
+.ch-card-name a {
   line-height: 2.5rem;
   font-size: 1.5rem;
   text-transform: capitalize;
+  text-decoration: none;
+  color: var(--black);
 }
+
+/* CHARACTER IMG FLIP */
+.flip-img{
+  perspective: 1000px;
+}
+
+.flip-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 2rem;
+}
+
+.flip-img:hover
+.flip-inner{
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back{
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-front-ch,
+.flip-back-ch{
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-front{
+  width: 18.25rem;
+  height: 23.5rem;
+}
+
+.flip-back{
+  width: 18.25rem;
+  height: 23.5rem;
+  transform: rotateY(180deg);
+}
+
+.flip-front-ch{
+  width: 29rem;
+  height: 38.5rem;
+}
+
+.flip-back-ch{
+  width: 29rem;
+  height: 38.5rem;
+  transform: rotateY(180deg);
+}
+
 
 /* PORTFOLIO & GALLERY CARD STYLE */
 #GPcard-content {
   height: fit-content;
+  display: flex;
+  flex-direction: column;
 }
 
 .GPcard-content.container {
@@ -233,15 +339,14 @@ header.sticky{
 
 .baris {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  margin: 39px 0px;
+  margin: 38px 50px;
+  align-items: center;
 }
 
 .card-container {
-  width: 396px;
-  height: 339px;
-  left: 3px;
+  width: 347px;
+  height: 291.38px;
   top: 56px;
   background: #fdfdfd;
   box-shadow: 3px 4px 4px 1px rgba(0, 0, 0, 0.25);
@@ -249,24 +354,66 @@ header.sticky{
 }
 
 .card-isi {
-  margin: 0px 10px;
-  padding: 11px;
+  margin: 11.62px 14px;
 }
 
-.card-isi h5 {
+.card-isi .text {
+  margin-left: 0.5rem;
+}
+
+.text p {
+  margin-top: -0.3rem;
+}
+
+.card-isi img {
+  width: 319.14px;
+  height: 202px;
+  border-radius: 35px;
+}
+
+/* Diedit ama Dwi keperluan slider */
+.story-card {
+  width: 20rem;
+  height: 17.5rem;
+  background: #fdfdfd;
+  box-shadow: 3px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 45px;
+}
+
+.st-card-content {
+  margin: 0px 10px;
+  padding: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.st-card-content h5 {
   margin-top: 0.5rem;
 }
 
 .img {
-  width: 356px;
-  height: 226px;
+  width: 18.5rem;
+  height: 11.75rem;
   border-radius: 35px;
+}
+/* Ini doang yang diedit */
+
+/* SKILLS AND ROLES BOX */
+.sr-box{
+  width: fit-content;
+  height: 3.5rem;
+  background-color: var(--yellow);
+  border-radius: 1rem;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  text-align: center;
 }
 
 /* FOOTER STYLE */
 footer {
   width: 100%;
-  height: 4rem;
+  height: 3rem;
   background-color: var(--light-cyan);
   text-align: center;
   display: flex;
@@ -274,6 +421,7 @@ footer {
 }
 
 footer p {
-  margin: 1rem;
-  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
 }

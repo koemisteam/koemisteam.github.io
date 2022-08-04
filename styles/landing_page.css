@@ -1,10 +1,5 @@
 #main-landing-page {
-  /* margin-top: -6.5rem; */
   width: 100%;
-}
-
-.section-title {
-  padding-top: 5rem;
 }
 
 /* JUMBOTRON STYLE */
@@ -12,42 +7,55 @@
   width: 100%;
 }
 
-.jumbotron-content {
+.lp-jumbotron-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 8rem;
-  height: 64rem;
+  /* height: 64rem; */
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
-.jumbotron-text {
+.lp-jumbotron-text {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.jumbotron-text p {
+.lp-jumbotron-text h2 {
+  text-transform: uppercase;
+}
+
+.lp-jumbotron-text p {
   text-align: justify;
 }
 
-.jumbotron-img img {
-  width: 24rem;
-  height: 24rem;
+.lp-jumbotron-img img {
+  width: 40rem;
+  height: 22rem;
 }
 
 /* ABOUT US STYLE */
 
 #about-us {
   width: 100%;
-  height: 64rem;
-  background-color: var(--dark-grey);
+  background: url(/assets/cover_gallery/bukber.jpg), var(--black);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
 }
 
 .about-us-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 7.5rem;
+  gap: 4rem;
+  height: 42rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .about-us-content h1,
@@ -57,32 +65,88 @@
 }
 
 .about-us-content p {
-  width: 51.5rem;
+  width: 40rem;
+  line-height: 2rem;
+}
+
+.about-us-content .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 19.5rem;
+  background-color: transparent;
+  border: solid 2px var(--white);
+  border-radius: 2.75rem;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.about-us-content .button:hover{
+  background-color: var(--white);
+}
+
+.about-us-content .button a {
+  width: 19.5rem;
+  font-size: 1.5em;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 0 4.5rem;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-us-content .button a:hover{
+  color: var(--black);
 }
 
 /* CHARACTERS STYLE */
-#characters{
+#characters {
   width: 100%;
 }
 
 .characters-content {
-  height: 64rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.characters-title{
+.characters-title {
   text-align: center;
 }
 
-.slider{
+.character-slider {
+  margin-top: 5rem;
+  height: 32rem;
+}
+
+.characters-content .button {
+  display: flex;
+  margin: auto;
   margin-top: 5rem;
 }
 
-
-/* GALLERY STYLE */
-#stories{
+/* STORIES STYLE */
+#stories {
   width: 100%;
 }
 
 .stories-content {
-  height: 64rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.stories-title {
+  text-align: center;
+}
+
+.story-slider {
+  margin-top: 5rem;
+  height: 21rem;
+}
+
+.stories-content .button {
+  display: flex;
+  margin: auto;
+  margin-top: 5rem;
 }
